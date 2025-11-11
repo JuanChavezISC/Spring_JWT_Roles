@@ -4,7 +4,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 
 public class RequestsResponses {
-    public record RegisterReequest(
+    public record RegisterRequest(
       @NotBlank String username,
       @NotBlank @Email String email,
       @NotBlank String password
