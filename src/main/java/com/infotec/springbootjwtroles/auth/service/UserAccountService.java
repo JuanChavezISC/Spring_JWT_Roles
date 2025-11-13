@@ -28,6 +28,7 @@ public class UserAccountService {
         // Asegurar que exista ROLE_USER
         Role userRole = roleRepo.findByName("ROLE_USER")
                 .orElseGet(() -> roleRepo.save(Role.builder()
+                                .name("ROLE_USER")
                         .description("Usuario basico")
                         .build()));
 
