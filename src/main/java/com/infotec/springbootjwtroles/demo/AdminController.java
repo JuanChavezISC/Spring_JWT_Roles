@@ -37,7 +37,7 @@ public class AdminController {
         var updateUser = adminUserService.assignRole(username, roleName);
 
         return Map.of(
-                "message", "Rol asignado ",
+                "message", "Rol asignado correctamente",
                 "user", updateUser.getUsername(),
                 "roles", updateUser.getRoles().toString()
         );
